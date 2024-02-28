@@ -1,0 +1,37 @@
+body { color: $color-dark; font-size: 14px; font-family: 'Roboto', sans-serif; position: relative; text-transform: uppercase; font-size: 12px; }
+
+a { @include transition(.2s ease-in-out); color: $color-black; text-decoration: none;
+  &:hover, &:active, &:focus { color: $color-black; outline: none !important; text-decoration: none; }
+  &.link { font-size: 10px; font-weight: bold; text-transform: uppercase;
+    &:hover, &:active, &:focus { color: darken($color-default, 5%);
+      &.icon {
+        i { color: $color-dark; }
+      }
+    }
+    &.icon {
+      i { @include transit; font-size: 12px; margin-left: 5px; position: relative; top: 1px; }
+    }
+  }
+  &.icon {
+    i { margin: 0 5px; font-size: 16px; vertical-align: middle; }
+    &.arrow {
+      &:after { @include elegant-font; content: "\$"; font-size: 16px; vertical-align: middle; }
+    }
+  }
+}
+
+dl { margin-bottom: 0;
+  dt { font-weight: 700; float: left; padding: 2px 0; }
+  dd { text-align: right; padding: 2px 0; }
+}
+
+h2 { @include opacity(.8); font-size: 24px; margin-top: 0; }
+hr { border-top: 1px solid #e4e4e4; margin-top: 25px; margin-bottom: 25px; }
+
+html, body { height: 100%; }
+
+p { @include opacity(.6); line-height: 20px; text-transform: none; }
+
+ul { padding-left: 12px; margin: 15px 0;
+  li { text-transform: none; }
+}

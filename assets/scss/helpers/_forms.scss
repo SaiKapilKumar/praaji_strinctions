@@ -1,0 +1,83 @@
+input[type="text"],input[type="email"], input[type="date"], input[type="time"], input[type="search"], input[type="password"], input[type="number"], input[type="tel"], textarea.form-control { @include box-shadow(0px 0px 0px 2px rgba(#000, .1), 0px 1px 10px rgba(0, 0, 0, 0.05)); @include border-radius(0px); @include transition(.3s); -webkit-appearance: none; background-color: #fff; border: none;  font-size: 14px; font-weight: 400; outline: none !important; padding-top: 8px; padding-bottom: 8px; width: 100%; height: inherit;
+  &:active, &:focus { @include box-shadow(0px 0px 0px 2px rgba(#000, .2), inset 1px 0 5px rgba(#000, .0)); }
+  &:hover { @include box-shadow(0px 0px 0px 2px rgba(#000, .2), inset 1px 0 5px rgba(#000, .0)); }
+  &.input-dark { background-color: rgba(#000, .3); color: #fff; }
+}
+
+label { cursor: pointer; margin-bottom: 8px; width: 100%; }
+
+textarea { resize: vertical; }
+
+button { outline: none !important;
+  &:hover, &:active, &:focus { outline: none !important; }
+}
+
+.btn[disabled] { @include opacity(.5); }
+
+.btn { @include transit; @include border-radius(0px); @include shadow; font-size: 10px; text-transform: uppercase; outline: none !important; border: none; font-weight: bold; padding: 9px 12px 6px 12px;
+  &:hover, &:active, &:focus { outline: none !important; @include box-shadow(1px 1px 10px rgba(0, 0, 0, 0.4)); }
+  &.btn-default {
+    &:hover, &:active, &:focus {  background-color: #fff; }
+  }
+  &.btn-white { background-color: #fff; }
+  &.btn-primary { background-color: $color-black; color: #fff;
+    &:hover, &:active, &:focus { background-color: $color-black; }
+  }
+  &.arrow {
+    &:after { @include elegant-font; content: "\$"; font-size: 16px; vertical-align: middle; margin-left: 5px; }
+  }
+}
+
+
+.hero-section {
+  form { @include box-shadow(1px 1px 8px rgba(0,0,0,.2)); margin-bottom: 0; z-index: 2; position: relative; margin-top: 0;
+    ::-webkit-input-placeholder {
+      color: rgba(#fff, .6);
+    }
+    :-moz-placeholder {
+      color: rgba(#fff, .6);
+    }
+    ::-moz-placeholder {
+      color: rgba(#fff, .6);
+    }
+    :-ms-input-placeholder {
+      color: rgba(#fff, .6);
+    }
+    label { font-weight: normal; }
+    .checkboxes { color: #fff; }
+    .form-group { position: relative; margin-bottom: 0;
+      &:after { background-color: rgba(#000, .05); content: ""; width: 1px; height: 100%; position: absolute; top: 0; right: 0; }
+    }
+    .form-control { color: #fff; margin-bottom: 0; }
+    .btn { @include border-radius(0); border: none; background-color: $color-default; color: #fff; padding: 30px; text-transform: none; width: 100%; font-size: 18px; font-weight: normal;
+      &:hover, &:focus, &:active { border: none; }
+      &[type="submit"]{ background-color: darken( $color-default, 10% ); }
+    }
+    .favorite-search { background-color: rgba(#000, .4); color: #fff; font-size: 12px; padding: 10px 30px;
+      span { font-weight: bold; margin-right: 10px; }
+      a { color: #fff; margin-right: 3px;
+        &:hover { text-decoration: underline; }
+        &:after { content: ","; }
+      }
+    }
+    .icheckbox { background-color: transparent; @include box-shadow(inset 0px 0px 0px 2px rgba(#fff,.3));
+      &:after { color: #fff; }
+    }
+  }
+}
+
+.form-control { @include border-radius(3px); }
+
+.marketing-form {
+  .left { float: left; width: 50%; }
+  .right { float: right; width: 50%; }
+}
+
+select { @include transit; @include appearance(none); @include border-radius(0px); border: none; cursor: pointer; background: url("../img/caret-down.png") no-repeat 100% center; margin-top: 5px; min-width: 40px;
+  &.framed { @include box-shadow(0 1px 2px rgba(#000, .2));  background-color: transparent; border-width: 2px; border-style: solid; border-color: rgba(#000, .25);
+    &.white { color: #fff; border-color: #fff; background: url("../img/caret-down-white.png") no-repeat 100% center;
+      option { color: $color-dark; }
+    }
+  }
+  option { background-color: #fff; padding: 5px; }
+}

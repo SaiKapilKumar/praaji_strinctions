@@ -1,0 +1,36 @@
+.navigation { padding: 20px 0; position: relative;
+  .nav-btn { position: absolute; right: 0px; top: 0px; bottom: 0px; height: 20px; margin: auto; padding: 5px;
+    &:hover { cursor: pointer; }
+    &:before { @include elegant-font; @include transit; @include opacity(0); content: "\M"; position: absolute; font-size: 22px; height: 12px; width: 12px; margin: auto; top: 0; left: 1px; }
+    figure { @include transit; height: 2px; width: 15px; background-color: $color-black; margin: 2px 0; }
+  }
+}
+
+.navigation-off-canvas { @include transform( translateX(0px) ); @include transit; position: absolute; background-color: $color-black; width: 250px; right: -250px; height: 100%;
+  h2 { @include opacity(1); font-size: 11px; font-weight: bold; padding-left: 20px; color: #fff; margin: 0; }
+  ul { list-style: none; padding-left: 0; margin: 0;
+    li { border-bottom: 1px solid rgba(#fff, .2);
+      &:first-child { border-top: 1px solid rgba(#fff, .2); }
+      .label { @include opacity(.7); }
+      a { background-color: rgba(#fff, 0); color: #fff; padding: 10px 20px; display: block;
+        &:hover { background-color: rgba(#fff, .2); }
+        &[data-toggle] {
+          &:after { @include opacity(.7); @include elegant-font; content: "\L"; color: #fff; position: absolute; right: 10px; font-size: 16px; }
+        }
+        &[aria-expanded=true]{ background-color: rgba(#fff, .2);
+          &:after { content: "\K" }
+        }
+      }
+      ul {
+        li {
+          a { background-color: rgba(#fff, .15); padding-left: 30px; }
+          ul {
+            li {
+              a { background-color: rgba(#fff, .15); padding-left: 60px; }
+            }
+          }
+        }
+      }
+    }
+  }
+}

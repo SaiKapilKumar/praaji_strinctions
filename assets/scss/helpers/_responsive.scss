@@ -1,0 +1,58 @@
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 992px - 1199px
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media (min-width: 992px) and (max-width: 1199px) {
+  .featured-works-carousel .slide .image { width: 560px; }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 768px - 991px
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media (min-width: 768px) and (max-width: 991px) {
+  .featured-works-carousel .slide .image { width: 420px; }
+  .featured-works-carousel .slide .title h3 { font-size: 26px; }
+  .featured-works-carousel .slide .title { padding: 25px; }
+  .featured-works-carousel .owl-controls { bottom: -20px; }
+  .framed { padding: 15px; }
+  .gallery .gallery-item .title .name { font-size: 12px; }
+  h2 { margin-bottom: 30px; }
+  .work-detail .title { display: inline-block; }
+  .work-detail .page-switcher { display: none; }
+  .work-detail .gallery { margin-top: 30px; }
+  .gallery .gallery-item .title { bottom: -55px; }
+  #page-services {
+    .col-md-6 { margin-bottom: 30px; }
+  }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// max to 767px
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media (max-width: 767px) {
+  .page-wrapper { display: block; }
+  .page-wrapper #page-header, .page-wrapper #page-footer, .page-wrapper #page-content { display: block; height: auto; }
+  .hero-section .heading-wrapper .title { padding: 30px 30px 30px 0; top: inherit; bottom: 100px; }
+  .hero-section .heading-wrapper .title h1 { font-size: 30px; }
+  .hero-section .heading-wrapper .owl-navigation { top: inherit; }
+  .featured-works-carousel .slide .image { width: 100%; margin-bottom: 30px; }
+  .featured-works-carousel .slide .title { right: inherit; left: 30px; }
+  .featured-works-carousel .owl-controls { bottom: -30px; }
+  .featured-block { margin: 50px 0; }
+  #page-footer { text-align: center; }
+  #page-footer .map-wrapper #map { position: relative; }
+  #page-footer .separator { display: inline-block; }
+  .person .left { width: 115px; height: 165px; }
+  .person .right { padding-left: 130px; }
+  .time-line .time-line-item .date { width: 70px; }
+  .time-line .time-line-item p { padding-left: 70px; }
+  .bg-transfer.bg-fixed, .bg-transfer { background-attachment: inherit; background-size: cover; background-position: center center; }
+  .work-detail .gallery { margin-top: 30px;
+    .width-100, .width-50, .width-33 { width: 100%; }
+  }
+  .page-switcher { display: none; }
+  #page-services {
+    .one-item-carousel { margin: 15px 0; }
+  }
+}
+
+
