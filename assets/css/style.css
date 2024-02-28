@@ -808,7 +808,7 @@ ul li {
   position: relative;
 }
 .hero-section.is-carousel .hero-wrapper {
-  height: 70%;
+  height: 60%;
   overflow: hidden;
   position: relative;
 }
@@ -1254,11 +1254,11 @@ ul li {
 #page-footer h3 {
   font-size: 14px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 #page-footer .logo {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 #page-footer .separator {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
@@ -1897,6 +1897,7 @@ select option {
     margin: 50px 0;
   }
 
+  /* page-footer */
   #page-footer {
     text-align: center;
   }
@@ -1947,3 +1948,7 @@ select option {
     margin: 15px 0;
   }
 }
+
+
+
+
