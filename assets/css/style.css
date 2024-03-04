@@ -40,6 +40,9 @@ Headers:		'Roboto', sans-serif;
 }
 .navigation .nav-btn:hover {
   cursor: pointer;
+  transform: scale(1.2); /* scales the element up to 110% of its original size */
+  transition: transform 0.2s ease-in-out; /* animates the scaling effect over 0.3 seconds */
+  color: rgb(96, 96, 96)
 }
 .navigation .nav-btn:before {
   text-shadow: none;
@@ -87,19 +90,13 @@ Headers:		'Roboto', sans-serif;
   right: -250px;
   height: 100%;
 }
-.navigation-off-canvas h2 {
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1;
-  font-size: 11px;
-  font-weight: bold;
-  padding-left: 20px;
-  color: #fff;
-  margin: 0;
-}
+
 .navigation-off-canvas ul {
   list-style: none;
   padding-left: 0;
   margin: 0;
+  padding-top: 25px;
+  font-size: 20px;
 }
 .navigation-off-canvas ul li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -117,8 +114,28 @@ Headers:		'Roboto', sans-serif;
   padding: 10px 20px;
   display: block;
 }
+.navigation-off-canvas ul li a {
+  position: relative;
+}
+
+.navigation-off-canvas ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #ffffff; /* Change this to the color you want for the underline */
+  opacity: 0.7;
+  transition: width .5s;
+}
+
 .navigation-off-canvas ul li a:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navigation-off-canvas ul li a:hover::after {
+  width: 100%;
 }
 .navigation-off-canvas ul li a[data-toggle]:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
@@ -134,7 +151,7 @@ Headers:		'Roboto', sans-serif;
   color: #fff;
   position: absolute;
   right: 10px;
-  font-size: 16px;
+  font-size: 18px;
 }
 .navigation-off-canvas ul li a[aria-expanded=true] {
   background-color: rgba(255, 255, 255, 0.2);
@@ -724,25 +741,36 @@ ul li {
   text-align: center;
   display: inline-block;
 }
-.featured-works-carousel .owl-controls .owl-prev:after, .featured-works-carousel .owl-controls .owl-next:after {
+
+.featured-works-carousel .owl-controls .owl-prev:after, 
+.featured-works-carousel .owl-controls .owl-next:after {
   font-size: 18px;
   color: black;
   line-height: 29px;
 }
+
 .featured-works-carousel .owl-controls .owl-prev {
   position: relative;
   left: 2px;
 }
+
 .featured-works-carousel .owl-controls .owl-prev:after {
   content: "\#";
 }
+
 .featured-works-carousel .owl-controls .owl-next:after {
   content: "\$";
+}
+
+.owl-prev:hover,
+.owl-next:hover { /* Apply hover effect to both prev and next buttons */
+   background-color: #9e9d9d; /* Change background color on hover */
 }
 
 .featured-blocks .featured-block {
   position: relative;
 }
+
 .featured-blocks .featured-block .date {
   padding: 20px;
   position: absolute;
@@ -750,18 +778,22 @@ ul li {
   top: -25px;
   font-size: 14px;
 }
+
 .featured-blocks .featured-block a {
   display: block;
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
 .featured-blocks .featured-block a h3 {
   font-size: 14px;
   font-weight: bold;
 }
+
 .featured-blocks .featured-block .description {
   padding-left: 100px;
 }
+
 
 .gallery .gallery-item {
   display: block;
@@ -982,6 +1014,7 @@ ul li {
   font-weight: 100;
   font-size: 48px;
 }
+
 .hero-section .heading-wrapper .title:before {
   border: 2px solid rgba(0, 0, 0, 0.2);
   padding: 25px;
@@ -997,6 +1030,15 @@ ul li {
 .hero-section .heading-wrapper .title a {
   position: absolute;
   bottom: -50px;
+  opacity: 0.6; /* set initial opacity to 0 */
+  transform: scale(0.9); /* set initial scale to 0.8 or any value less than 1 */
+  transition: opacity 0.3s, transform 0.3s; /* add transition for smooth effect */
+  font-size: 18px
+}
+
+.hero-section .heading-wrapper .title a:hover {
+  opacity: 1; /* set opacity to 1 on hover */
+  transform: scale(1); /* set scale to 1 on hover */
 }
 .hero-section .heading-wrapper .heading {
   position: relative;
