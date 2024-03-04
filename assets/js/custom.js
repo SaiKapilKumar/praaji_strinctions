@@ -128,6 +128,8 @@ $(document).ready(function($) {
             fluidSpeed: true,
             navSpeed: 1000,
             items: 1,
+            autoplay:true,
+            autoplayTimeout:3000,
             navText: [],
             nav: true,
             center: true,
@@ -148,6 +150,42 @@ $(document).ready(function($) {
             }
         });
     });
+
+    // new carousel
+
+    $(document).ready(function(){
+        $(".carousel").owlCarousel({
+            // Add your Owl Carousel options here
+            loop:true,
+            margin:10,
+            nav:true,
+            autoplay:true,
+            autoplayTimeout:3000,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        });
+
+        // Functionality for owl-prev and owl-next buttons
+        $('.owl-prev').click(function() {
+            $('.carousel').trigger('prev.owl.carousel');
+        });
+        
+        $('.owl-next').click(function() {
+            $('.carousel').trigger('next.owl.carousel');
+        });
+    });
+
+    // end new carousel
+
 
     //  Scroll Reveal
 
@@ -268,4 +306,5 @@ $.getScript("assets/js/jquery.session.js", function() {
     }
 
 });
+
 
