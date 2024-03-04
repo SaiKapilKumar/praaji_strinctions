@@ -1046,7 +1046,7 @@ ul li {
 }
 .hero-section .heading-wrapper .owl-navigation {
   position: absolute;
-  right: 15px;
+  right: 0px;
   top: 15px;
 }
 .hero-section .heading-wrapper .owl-navigation .owl-prev, .hero-section .heading-wrapper .owl-navigation .owl-next {
@@ -1919,7 +1919,7 @@ select option {
   }
 
   .hero-section .heading-wrapper .owl-navigation {
-    top: 123px;
+    top: inherit;
   }
 
   .featured-works-carousel .slide .image {
