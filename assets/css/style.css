@@ -398,7 +398,9 @@ ul li {
 .half-bottom-margin {
   margin-bottom: 30px;
 }
-
+.row{
+  margin-top: 20px
+}
 .row.no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -1119,6 +1121,8 @@ ul li {
   text-align: center;
 }
 
+
+
 .outer-wrapper {
   overflow: hidden;
   position: relative;
@@ -1402,8 +1406,8 @@ ul li {
 }
 .section-title-1{
   margin-top: 0px;
-  padding-top: 50px;
-  padding-left:0px;
+  padding-top: -40px;
+  padding-left:15px;
   padding-right:15px;
   padding-bottom: 20px;
   font-size: 50px;
@@ -1411,7 +1415,11 @@ ul li {
 
 .section-title {
   margin-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
+}
+
+.section-title h1 {
+  margin-top: 45px;
 }
 
 .section-title-abc {
@@ -1420,7 +1428,7 @@ ul li {
 }
 
 .section-title h2 {
-  margin-top: 10px;
+  margin-top: 15px;
   font-weight: 300;
 }
 
@@ -2044,8 +2052,7 @@ select option {
 
 .block-contact-button{
     margin-top: -50px;
-    margin-bottom: 20px;
-    padding: 10px 20px;
+    padding: 0px 15px;
     font-size: 16px;
     text-decoration: none;
     text-transform: none;
@@ -2060,7 +2067,7 @@ select option {
   padding: 25px 50px;
   background-color: #000;
   border: #fff;
-  margin-top: 20px;
+  margin-top: 35px;
   margin-bottom: 20px;
   font-size: 20px;
   text-decoration: none;
