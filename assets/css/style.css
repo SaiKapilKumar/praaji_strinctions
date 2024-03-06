@@ -243,7 +243,7 @@ dl dd {
 
 h2 {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  opacity: 0.8;
+  opacity: 1;
   font-size: 24px;
   margin-top: 0;
 }
@@ -710,13 +710,13 @@ ul li {
 .featured-works-carousel .slide .image {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
-  width: 700px;
+  width: 530px;
 }
 .featured-works-carousel .slide .title {
   padding: 20px;
   padding: 30px;
   position: absolute;
-  right: 15px;
+  right: 45px;
   top: 15px;
   z-index: 1;
 }
@@ -1468,7 +1468,9 @@ ul li {
 }
 
 .tags {
+  font-size: 16px;
   margin: 15px 0;
+  text-transform: none;
 }
 .tags .tag:after {
   content: "/";
@@ -1881,12 +1883,12 @@ select option {
 /* 6. Responsive */
 @media (min-width: 992px) and (max-width: 1199px) {
   .featured-works-carousel .slide .image {
-    width: 560px;
+    width: 530px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .featured-works-carousel .slide .image {
-    width: 420px;
+    width: 400px;
   }
 
   .featured-works-carousel .slide .title h3 {
@@ -2025,6 +2027,55 @@ select option {
   #page-services .one-item-carousel {
     margin: 15px 0;
   }
+}
+
+
+/* Custom classes */
+
+.Our-approach{
+  font-size:  16px;
+  text-decoration: none;
+  text-transform: none;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+
+
+.block-contact-button{
+    margin-top: -50px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 1px;
+    color: #000000;
+    background-color: #000000;
+    transition: 0.5s ease;
+  }
+
+.contact-btn {
+  display: inline-block;
+  padding: 25px 50px;
+  background-color: #000;
+  border: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: 1px;
+  color: #000000;
+  background-color: #000000;
+  border: 0.8px solid #ffffff;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+/* Add animation on hover */
+.contact-btn:hover {
+  background-color: #555454; /* Add this line to set the background color to white */
+  color: #fff; /* Add this line to set the text color to black */
 }
 
 
