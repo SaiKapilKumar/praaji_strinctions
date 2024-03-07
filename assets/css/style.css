@@ -2122,6 +2122,7 @@ select option {
 .col-md-4{
   padding: 0px;
   padding-bottom: 10px;
+  padding-right: 40px;
 }
 
 .person .left .gallery img{
