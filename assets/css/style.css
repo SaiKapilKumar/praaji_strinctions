@@ -1204,6 +1204,12 @@ ul li {
   background-color: black;
   color: #fff;
 }
+
+.page-background-custom {
+  background-color: rgb(76, 76, 76);
+  color: #fff;
+}
+
 .page-background-black.page-framed-white #page-header, .page-background-black.page-framed-white #page-footer .copyright {
   background-color: #fff;
   color: black;

@@ -308,14 +308,5 @@ $.getScript("/path/to/jquery.session.js", function() {
 });
 
 /////////////
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-        items: 1,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 2000, // Adjust this value for slower transition
-        autoplayHoverPause: true // Pause on hover (optional)
-    });
-});
 
 
