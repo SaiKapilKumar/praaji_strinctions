@@ -1553,7 +1553,7 @@ ul li {
   margin-bottom: 0;
 }
 .time-line .time-line-item .date {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   width: 110px;
   float: left;
@@ -1759,6 +1759,14 @@ button:hover, button:active, button:focus {
   background-color: black;
   color: #fff;
 }
+.btn.btn-primary-1 {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
+.btn.btn-primary-1:hover, .btn.btn-primary-1:active, .btn.btn-primary-1:focus {
+  background-color: rgb(81, 81, 81);
+}
+
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   background-color: black;
 }
